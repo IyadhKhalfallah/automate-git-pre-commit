@@ -1,0 +1,8 @@
+repos:
+  - repo: local
+    hooks:
+      - id: aws-crendentials-check
+        name: aws-crendentials-check
+        entry: scripts/aws-check-credentials.sh
+        language: script
+        pass_filenames: false
